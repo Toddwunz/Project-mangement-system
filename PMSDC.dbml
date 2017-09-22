@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="PMSYSDB" Class="PMSDCDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=J:\Projects\PMSYS\PMsys\PMSYSDB.mdf;Integrated Security=True" SettingsObjectName="PMsys.Properties.Settings" SettingsPropertyName="PMSYSDBConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.client" Member="clients">
+    <Type Name="client">
+      <Column Name="ClientID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ClientName" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="ClinetPhone" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="ProjectID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Comment" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Passwd" Type="System.String" DbType="NVarChar(32) NOT NULL" CanBeNull="false" />
+      <Column Name="Bill" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Project_client" Member="Project" ThisKey="ProjectID" OtherKey="ProjectID" Type="Project" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.employee" Member="employees">
+    <Type Name="employee">
+      <Column Name="empID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="empName" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="empGender" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="empDOB" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="empQA" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="empDOH" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="empPayrate" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Jcode" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="emPasswd" Type="System.String" DbType="NVarChar(32) NOT NULL" CanBeNull="false" />
+      <Column Name="emAddress" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="employee_ProjectTask" Member="ProjectTasks" ThisKey="empID" OtherKey="empID" Type="ProjectTask" />
+      <Association Name="employee_Salary" Member="Salaries" ThisKey="empID" OtherKey="empID" Type="Salary" />
+      <Association Name="Job_employee" Member="Job" ThisKey="Jcode" OtherKey="Jcode" Type="Job" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.EmpTask" Member="EmpTasks">
+    <Type Name="EmpTask">
+      <Column Name="TaskID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="empID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Job" Member="Jobs">
+    <Type Name="Job">
+      <Column Name="Jcode" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Jtitle" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Jdescribe" Type="System.String" DbType="NText" CanBeNull="true" UpdateCheck="Never" />
+      <Association Name="Job_employee" Member="employees" ThisKey="Jcode" OtherKey="Jcode" Type="employee" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Project" Member="Projects">
+    <Type Name="Project">
+      <Column Name="ProjectID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ProjectName" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="DueDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Budget" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="Describe" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Project_client" Member="clients" ThisKey="ProjectID" OtherKey="ProjectID" Type="client" />
+      <Association Name="Project_ProjectTask" Member="ProjectTasks" ThisKey="ProjectID" OtherKey="ProjectID" Type="ProjectTask" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProjectTask" Member="ProjectTasks">
+    <Type Name="ProjectTask">
+      <Column Name="TaskID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ProjectID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="empID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="StartTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DueTime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ptID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="aStartTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="aFinshTime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="employee_ProjectTask" Member="employee" ThisKey="empID" OtherKey="empID" Type="employee" IsForeignKey="true" />
+      <Association Name="Project_ProjectTask" Member="Project" ThisKey="ProjectID" OtherKey="ProjectID" Type="Project" IsForeignKey="true" />
+      <Association Name="Task_ProjectTask" Member="Task" ThisKey="TaskID" OtherKey="TaskID" Type="Task" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Task" Member="Tasks">
+    <Type Name="Task">
+      <Column Name="TaskID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TaskName" Type="System.String" DbType="NVarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="TaskDescribe" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Association Name="Task_ProjectTask" Member="ProjectTasks" ThisKey="TaskID" OtherKey="TaskID" Type="ProjectTask" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Salary" Member="Salaries">
+    <Type Name="Salary">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="empID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="[2week]" Member="_2week" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Salary" Member="Salary1" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="type" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="StartDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="EndDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Association Name="employee_Salary" Member="employee" ThisKey="empID" OtherKey="empID" Type="employee" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

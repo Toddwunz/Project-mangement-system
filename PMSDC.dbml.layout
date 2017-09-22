@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 14.625, 9.625" name="PMSDC">
+  <DataContextMoniker Name="/PMSDCDataContext" />
+  <nestedChildShapes>
+    <classShape Id="f790f22d-6e8c-469b-9ffc-5f3cd7e3ccb7" absoluteBounds="10, 0.75, 2, 2.0916874186197916">
+      <DataClassMoniker Name="/PMSDCDataContext/client" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2e69d092-3e96-438f-9798-7ae244475f13" absoluteBounds="10.015, 1.21, 1.9700000000000002, 1.5316874186197915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5e24dc2e-a621-4ccd-b059-489de85c68f5" absoluteBounds="4.125, 3.75, 2, 2.64606974283854">
+      <DataClassMoniker Name="/PMSDCDataContext/employee" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8bc21385-a5e7-4da2-9a62-ab6f6609a0de" absoluteBounds="4.1400000000000006, 4.21, 1.9700000000000002, 2.0860697428385415" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="270fcb0b-0018-4a93-be0a-7f0b23de7753" absoluteBounds="12.375, 8.25, 2, 1.1677168782552085">
+      <DataClassMoniker Name="/PMSDCDataContext/EmpTask" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6d3cc1dc-322f-4d85-a632-4970c7f91052" absoluteBounds="12.39, 8.71, 1.9700000000000002, 0.60771687825520826" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4118896b-d2e2-44f9-b643-ea6ff476a357" absoluteBounds="1.125, 4.125, 2, 1.3525109863281237">
+      <DataClassMoniker Name="/PMSDCDataContext/Job" />
+      <nestedChildShapes>
+        <elementListCompartment Id="78a24e57-3a3f-4a15-a628-a073b45a8b48" absoluteBounds="1.1400000000000001, 4.5850000000000009, 1.9700000000000002, 0.792510986328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="009327ab-d469-4bd9-b03a-55b20d5525b9" absoluteBounds="7, 0.75, 2, 1.9068933105468755">
+      <DataClassMoniker Name="/PMSDCDataContext/Project" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2c22fb2d-f8ed-4cd4-82ad-f295d6378256" absoluteBounds="7.015, 1.21, 1.9700000000000002, 1.346893310546875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7d7791f3-f7a7-4b10-b61a-957aae0412f0" absoluteBounds="4.25, 0.625, 2, 2.4612756347656251">
+      <DataClassMoniker Name="/PMSDCDataContext/ProjectTask" />
+      <nestedChildShapes>
+        <elementListCompartment Id="45fb7342-9041-4d95-8cd9-0971022857d7" absoluteBounds="4.2650000000000006, 1.085, 1.9700000000000002, 1.901275634765625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a62acf13-20c5-4eec-b6a0-942861709baa" absoluteBounds="0.875, 1, 2, 1.3525109863281251">
+      <DataClassMoniker Name="/PMSDCDataContext/Task" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ce77eacf-5d55-4776-81eb-155004c85e39" absoluteBounds="0.89000000000000012, 1.46, 1.9700000000000002, 0.792510986328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.125 : 4.80125549316406); (4.125 : 4.80125549316406)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/PMSDCDataContext/Job/Job_employee" />
+      <nodes>
+        <classShapeMoniker Id="4118896b-d2e2-44f9-b643-ea6ff476a357" />
+        <classShapeMoniker Id="5e24dc2e-a621-4ccd-b059-489de85c68f5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9 : 1.70344665527344); (10 : 1.70344665527344)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/PMSDCDataContext/Project/Project_client" />
+      <nodes>
+        <classShapeMoniker Id="009327ab-d469-4bd9-b03a-55b20d5525b9" />
+        <classShapeMoniker Id="f790f22d-6e8c-469b-9ffc-5f3cd7e3ccb7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.1875 : 3.75); (5.1875 : 3.08627563476563)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/PMSDCDataContext/employee/employee_ProjectTask" />
+      <nodes>
+        <classShapeMoniker Id="5e24dc2e-a621-4ccd-b059-489de85c68f5" />
+        <classShapeMoniker Id="7d7791f3-f7a7-4b10-b61a-957aae0412f0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7 : 1.70344665527344); (6.25 : 1.70344665527344)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/PMSDCDataContext/Project/Project_ProjectTask" />
+      <nodes>
+        <classShapeMoniker Id="009327ab-d469-4bd9-b03a-55b20d5525b9" />
+        <classShapeMoniker Id="7d7791f3-f7a7-4b10-b61a-957aae0412f0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.875 : 1.67625549316406); (4.25 : 1.67625549316406)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/PMSDCDataContext/Task/Task_ProjectTask" />
+      <nodes>
+        <classShapeMoniker Id="a62acf13-20c5-4eec-b6a0-942861709baa" />
+        <classShapeMoniker Id="7d7791f3-f7a7-4b10-b61a-957aae0412f0" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="0f3ba8f0-9003-4267-9ccc-76f6478c4a36" absoluteBounds="7.375, 4.25, 2, 2.0916874186197916">
+      <DataClassMoniker Name="/PMSDCDataContext/Salary" />
+      <nestedChildShapes>
+        <elementListCompartment Id="15285c07-b383-4c03-a3f5-1292216ae6fc" absoluteBounds="7.39, 4.7100000000000009, 1.9700000000000002, 1.5316874186197915" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(6.125 : 5.2958437093099); (7.375 : 5.2958437093099)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/PMSDCDataContext/employee/employee_Salary" />
+      <nodes>
+        <classShapeMoniker Id="5e24dc2e-a621-4ccd-b059-489de85c68f5" />
+        <classShapeMoniker Id="0f3ba8f0-9003-4267-9ccc-76f6478c4a36" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
