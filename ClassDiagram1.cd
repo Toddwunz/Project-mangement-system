@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PMsys.AssigenTaskForm" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CACAQEJAQCAQQNAAEEWQCAACAEAAgoARsCQggICAAAM=</HashCode>
+      <FileName>AssigenTaskForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PMsys.ChangePerInfo" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAIMAAAAECQQABQEAASAAAACAAAAEAAAIAARAAAAAAA=</HashCode>
+      <FileName>ChangePerInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PMsys.clientCheckForm" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAQAAACAQABAAAACAAAACAAAAAgAAICAAAAAIAQA=</HashCode>
+      <FileName>clientCheckForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PMsys.clientForm" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>OQIABEIAQCAQQFAAACWRAIACIAAAgoAQoCAgCAAAAAE=</HashCode>
+      <FileName>clientForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PMsys.ClientLoginForm" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAASAAAhAAACCAAAACAAgAAAACIAAQAAAAAAA=</HashCode>
+      <FileName>ClientLoginForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PMsys.Controller" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IEEgkgQACRQwAAAAEEAEAABQARQBIAAIAEEAIRAQA0Q=</HashCode>
+      <FileName>Controller.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PMsys.GV" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAEAAAAAAgAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>GV.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PMsys.HRForm" Collapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQCAAAAAQCAAAAgAAACABAAiIAgAAAAAACAAAAgAABA=</HashCode>
+      <FileName>HRForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PMsys.loginform" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAASQAApAAADCAAAACAAAAAAACIAAQAAAAAAA=</HashCode>
+      <FileName>loginform.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PMsys.MstaffForm" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>OQAABEIABDIQQFQAAGWAAJACAAAAioAQoCggAIAAAEE=</HashCode>
+      <FileName>MstaffForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PMsys.PMDBDataSet" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AJBAACAAEwAERAJIJAoISoCAAAgDQhgEAcAAhEEIBFA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PMsys.PMForm" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQCAAAAARCQgIAgACBCARAACIAwAAAEAACAAAAQAABA=</HashCode>
+      <FileName>PMForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PMsys.PMSDCDataContext" Collapsed="true">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAACAABEAIoACkgCAEgYEoAgADiAIAEAAggIBCBAAQA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PMsys.client" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAgIIgFABMEAiAAwAEADAADjCEAICAAQCgUCAAgCAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PMsys.employee" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIggBiQNMA8SCoAiQAECgMAFiGAKAIAYgADSUQAAABA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PMsys.EmpTask" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAABAAgCgIAAQAEAAAABiCgIAAAAIAAEAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PMsys.Job" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQgAgABEAQAAgAAYAEoAAABiCAAEAAAAAABEACgAgA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PMsys.Project" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CIAgAAABIAAVECgASAUCAIAvjSAAIMEQIACAAEACgAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PMsys.ProjectTask" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAARFAAgHgYQEwRkICCgjrikIIAADIEEkAAAACCA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PMsys.Task" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAgACARAAAQgAAARAEDAIABiCggAAAAIASEAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PMsys.Salary" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAiAAABAwgDoIRAYAEIAIAhjCgJIAAQIAAQAEAUAQA=</HashCode>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PMsys.Program" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PMsys.ProjectBillFrom" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CEAFAAAAACAQAFAAACCEAACCAIAAAgAAICAAAAAAAAE=</HashCode>
+      <FileName>ProjectBillFrom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PMsys.ProjectForm" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MAAAJEIABCAQQFAAAAWAAIACABAAgoAQoKAggABAAAE=</HashCode>
+      <FileName>ProjectForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PMsys.ProjectScheduleFrom" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAACAwAFAQQACAAAACAAAAAgAAIKEAAAAAAAA=</HashCode>
+      <FileName>ProjectScheduleFrom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PMsys.SalaryBill" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CgAAAAJgACCUAFAQAACAAAACAAAAAgABIKABgAAAAAA=</HashCode>
+      <FileName>SalaryBill.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PMsys.staffForm" Collapsed="true">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgBQAAgCAUABAAAACSAAACiAgAAgEQIWAAAAAAAAE=</HashCode>
+      <FileName>staffForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PMsys.TaskForm" Collapsed="true">
+    <Position X="4" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KAAABEIAQDARQFAAAEWQAIACABAAgoAQoCAgAAAAAAE=</HashCode>
+      <FileName>TaskForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PMsys.UpdateTaskForm" Collapsed="true">
+    <Position X="7.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAMAAAAECAQABAAAACAAAACAAAAAAAAIAAQAAAAAAA=</HashCode>
+      <FileName>UpdateTaskForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PMsys.PMDBDataSetTableAdapters.TaskTableAdapter" Collapsed="true">
+    <Position X="5.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PMsys.PMDBDataSetTableAdapters.employeeTableAdapter" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PMsys.PMDBDataSetTableAdapters.EmpTaskTableAdapter" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PMsys.PMDBDataSetTableAdapters.JobTableAdapter" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PMsys.PMDBDataSetTableAdapters.ProjectTableAdapter" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PMsys.PMDBDataSetTableAdapters.ProjectTaskTableAdapter" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PMsys.PMDBDataSetTableAdapters.clientTableAdapter" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PMsys.PMDBDataSetTableAdapters.SalaryTableAdapter" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EASAAGAAEAAAAAcAIAAAAAAAACEICAAAAAAAAAAABBA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PMsys.PMDBDataSetTableAdapters.TableAdapterManager" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQCAACABCABABAEBABAFMICgAAACgIABAAYAABgAFAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PMsys.Properties.Resources" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PMsys.Properties.Settings" Collapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAACAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>
